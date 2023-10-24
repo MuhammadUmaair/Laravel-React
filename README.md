@@ -24,6 +24,10 @@ npm start
             📁 javascript
         📂 frontend
     📂 components
+        📂 admin
+            🗏 Dashboard.js
+            🗏 Profile.js
+        📂 Frontend
     📂 layouts
         📂 admin
             🗏 Footer.js
