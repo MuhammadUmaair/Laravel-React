@@ -8,9 +8,8 @@ npm start
 
 ### For Admin Panel 
 
-```
-📁 Admin Panel Download: [![Stack Overflow Profile](https://img.shields.io/badge/Download-Profile-green)](https://startbootstrap.com/template/sb-admin)
-```
+📁 Admin Panel Download: [![Stack Overflow Profile](https://img.shields.io/badge/Admin%20Panel-Download-green)](https://startbootstrap.com/template/sb-admin)
+
 
 ### Connect
 
