@@ -10,6 +10,27 @@ npm start
 
 📁 Admin Panel Download: [![Stack Overflow Profile](https://img.shields.io/badge/Admin%20Panel-Download-green)](https://startbootstrap.com/template/sb-admin)
 
+### Hierarchy
+```
+
+📂 src
+    📂 assets
+        📂 admin
+            📁 assets
+            📁 css
+            📁 javascript
+        📂 frontend
+    📂 components
+    📂 layouts
+        📂 admin
+            🗏 Footer.js
+            🗏 MasterLayout.js
+            🗏 Navbar.js
+            🗏 Sidebar.js
+        📂 frontend
+
+```
+
 
 ### Connect
 
