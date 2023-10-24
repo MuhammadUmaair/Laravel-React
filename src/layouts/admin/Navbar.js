@@ -4,13 +4,13 @@ import {Link} from 'react-router-dom'
 const Navbar = () => {
   return (
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-      <a class="navbar-brand ps-3" href="index.html">
+      <Link class="navbar-brand ps-3" to="index.html">
         Start Bootstrap
-      </a>
+      </Link>
       <button
         class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
         id="sidebarToggle"
-        href="#!"
+        to="#!"
       >
         <i class="fas fa-bars"></i>
       </button>
@@ -45,22 +45,22 @@ const Navbar = () => {
             aria-labelledby="navbarDropdown"
           >
             <li>
-              <a class="dropdown-item" href="#!">
+              <Link class="dropdown-item" to="#!">
                 Settings
-              </a>
+              </Link>
             </li>
             <li>
-              <a class="dropdown-item" href="#!">
+              <Link class="dropdown-item" to="#!">
                 Activity Log
-              </a>
+              </Link>
             </li>
             <li>
               <hr class="dropdown-divider" />
             </li>
             <li>
-              <a class="dropdown-item" href="#!">
+              <Link class="dropdown-item" to="#!">
                 Logout
-              </a>
+              </Link>
             </li>
           </ul>
         </li>
