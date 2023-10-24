@@ -5,6 +5,9 @@ npx create-react-app reactecom
 cd reactecom
 npm start
 ```
+### For React Router Dom
+
+```npm install react-router-dom```
 
 ### For Admin Panel 
 
