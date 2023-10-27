@@ -1,5 +1,6 @@
 import "../../assets/admin/css/styles.css";
 import "../../assets/admin/js/scripts";
+import {Outlet} from "react-router-dom";
 
 import React from "react";
 import Navbar from "./Navbar";
@@ -15,7 +16,9 @@ const MasterLayout = () => {
           <Sidebar />
         </div>
         <div id="layoutSidenav_content">
-          <main></main>
+          <main>
+            <Outlet/>
+          </main>
           <Footer />
         </div>
       </div>
