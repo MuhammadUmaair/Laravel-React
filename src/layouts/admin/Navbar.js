@@ -1,64 +1,70 @@
 import React from "react";
 import {Link} from 'react-router-dom'
+import routes from "../../routes/routes";
 
 const Navbar = () => {
   return (
-    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-      <Link class="navbar-brand ps-3" to="index.html">
+    <nav className="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+      <Link className="navbar-brand ps-3" to={routes.dashboard}>
         Start Bootstrap
       </Link>
       <button
-        class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
+        className="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
         id="sidebarToggle"
         to="#!"
       >
-        <i class="fas fa-bars"></i>
+        <i className="fas fa-bars"></i>
       </button>
-      <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-        <div class="input-group">
+      <form className="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+        <div className="input-group">
           <input
-            class="form-control"
+            className="form-control"
             type="text"
             placeholder="Search for..."
             aria-label="Search for..."
             aria-describedby="btnNavbarSearch"
           />
-          <button class="btn btn-primary" id="btnNavbarSearch" type="button">
-            <i class="fas fa-search"></i>
+          <button className="btn btn-primary" id="btnNavbarSearch" type="button">
+            <i className="fas fa-search"></i>
           </button>
         </div>
       </form>
-      <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
-        <li class="nav-item dropdown">
+      <ul className="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+        <li className="nav-item dropdown">
           <Link
-            class="nav-link dropdown-toggle"
+            className="nav-link dropdown-toggle"
             id="navbarDropdown"
             to="#"
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            <i class="fas fa-user fa-fw"></i>
+            <i className="fas fa-user fa-fw"></i>
           </Link>
           <ul
-            class="dropdown-menu dropdown-menu-end"
+            className="dropdown-menu dropdown-menu-end"
             aria-labelledby="navbarDropdown"
           >
+          <li>
+              <Link className="dropdown-item" to={routes.profile}>
+                Profile
+              </Link>
+            </li>
             <li>
-              <Link class="dropdown-item" to="#!">
+              <Link className="dropdown-item" to="#!">
                 Settings
               </Link>
             </li>
             <li>
-              <Link class="dropdown-item" to="#!">
+              <Link className="dropdown-item" to="#!">
                 Activity Log
               </Link>
             </li>
             <li>
-              <hr class="dropdown-divider" />
+              <hr className="dropdown-divider" />
             </li>
             <li>
-              <Link class="dropdown-item" to="#!">
+              <Link className="dropdown-item" to="#!">
                 Logout
               </Link>
             </li>
