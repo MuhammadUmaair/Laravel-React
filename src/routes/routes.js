@@ -4,6 +4,7 @@ const mainRoutes = {
 }
 
 const dashboardRoutes = {
+    home: `${mainRoutes.home}/`,
     dashboard: `${mainRoutes.admin}/dashboard`,
     profile: `${mainRoutes.admin}/profile`,
 }
