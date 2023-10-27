@@ -26,6 +26,7 @@ npm start
     📂 components
         📂 admin
             🗏 Dashboard.js
+            🗏 Home.js
             🗏 Profile.js
         📂 Frontend
     📂 layouts
@@ -35,6 +36,8 @@ npm start
             🗏 Navbar.js
             🗏 Sidebar.js
         📂 frontend
+    📂 routes
+        🗏 Routes.js
 
 ```
 
