@@ -19,7 +19,7 @@ npm start
 
 ### For Admin Panel 
 
-📁 Admin Panel Download: [![Admin Panel](https://img.shields.io/badge/Admin%20Panel-Download-green)](https://startbootstrap.com/template/sb-admin)
+📁 Admin Panel Download: [![Admin Panel](https://img.shields.io/badge/Download-Admin%20Panel-green)](https://startbootstrap.com/template/sb-admin)
 
 ### Hierarchy
 ```
