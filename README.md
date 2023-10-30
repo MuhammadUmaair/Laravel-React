@@ -14,7 +14,7 @@ npm start
 
 ```npm install bootstrap@5.3.2```
 
-🗏 Install Bootstrap: [![Install Bootstrap](https://img.shields.io/badge/Install%20Bootstrap-Download-blue-violet)](https://getbootstrap.com/)
+🗏 Install Bootstrap: [![Install Bootstrap](https://img.shields.io/badge/Install%20Bootstrap-Download-blueviolet)](https://getbootstrap.com/)
 
 
 ### For Admin Panel 
