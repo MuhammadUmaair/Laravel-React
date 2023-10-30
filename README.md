@@ -9,6 +9,12 @@ npm start
 
 ```npm install react-router-dom```
 
+### For Install Axios
+
+🗏 Install Axios: [![Axios](https://img.shields.io/badge/Install-Axios-red)](https://www.npmjs.com/package/axios)
+
+```npm install axios```
+
 
 ### For Bootstrap
 
@@ -34,9 +40,12 @@ npm start
     📂 components
         📂 admin
             🗏 Dashboard.js
-            🗏 Home.js
             🗏 Profile.js
         📂 Frontend
+            📂 auth
+                🗏 Login.js
+                🗏 Register.js
+            🗏 Home.js
     📂 layouts
         📂 admin
             🗏 Footer.js
@@ -44,6 +53,7 @@ npm start
             🗏 Navbar.js
             🗏 Sidebar.js
         📂 frontend
+            🗏 Navbar.js
     📂 routes
         🗏 Routes.js
 
