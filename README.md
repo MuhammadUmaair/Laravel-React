@@ -14,6 +14,12 @@ php artisan serve
 
 ```composer require laravel/ui```
 
+### For Install UI Auth
+
+**when you want to quickly set up user authentication in a Laravel project without having to manually create all the required files and routes.**
+
+```php artisan ui:auth```
+
 ### Hierarchy
 ```
 
