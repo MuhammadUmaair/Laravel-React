@@ -12,9 +12,9 @@ npm start
 
 ### For Bootstrap
 
-```npm install bootstrap@5.3.2```
+🗏 Install Bootstrap: [![Bootstrap](https://img.shields.io/badge/Install-Bootstrap-blueviolet)](https://getbootstrap.com/)
 
-🗏 Install Bootstrap: [![Bootstrap](https://img.shields.io/badge/Bootstrap-Install-blueviolet)](https://getbootstrap.com/)
+```npm install bootstrap@5.3.2```
 
 
 ### For Admin Panel 
