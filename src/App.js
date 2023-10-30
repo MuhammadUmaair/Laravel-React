@@ -9,6 +9,8 @@ import Dashboard from "./components/admin/Dashboard";
 import Profile from "./components/admin/Profile";
 import routes from "./routes/routes";
 import Home from "./components/admin/Home";
+import Login from "./components/frontend/auth/Login";
+import Register from "./components/frontend/auth/Register";
 
 function App() {
 
@@ -17,6 +19,8 @@ function App() {
       <Router>
         <Routes>
           <Route path={routes.home} element={<Home/>} />
+          <Route path={routes.login} element={<Login/>} />
+          <Route path={routes.register} element={<Register/>} />
           <Route  path={routes.admin} element={<MasterLayout />}>
             <Route path={routes.dashboard} element={<Dashboard />} /> {/* Relative path */}
             <Route path={routes.profile} element={<Profile />} />
