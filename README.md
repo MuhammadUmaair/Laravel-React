@@ -8,6 +8,12 @@ cd example-app
 php artisan serve
 ```
 
+### For Install UI
+
+🗏 Install UI: [![UI](https://img.shields.io/badge/Install-Laravel20%UI-orange)](https://packagist.org/packages/laravel/ui)
+
+```composer require laravel/ui```
+
 ### Hierarchy
 ```
 
