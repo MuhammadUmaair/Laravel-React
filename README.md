@@ -9,9 +9,17 @@ npm start
 
 ```npm install react-router-dom```
 
+
+### For Bootstrap
+
+```npm install bootstrap@5.3.2```
+
+🗏 Install Bootstrap: [![Install Bootstrap](https://img.shields.io/badge/Install%20Bootstrap-Download-Blue-Violet)](https://getbootstrap.com/)
+
+
 ### For Admin Panel 
 
-📁 Admin Panel Download: [![Stack Overflow Profile](https://img.shields.io/badge/Admin%20Panel-Download-green)](https://startbootstrap.com/template/sb-admin)
+📁 Admin Panel Download: [![Admin Panel](https://img.shields.io/badge/Admin%20Panel-Download-green)](https://startbootstrap.com/template/sb-admin)
 
 ### Hierarchy
 ```
