@@ -1,5 +1,7 @@
 const mainRoutes = {
     home: "/",
+    register: "/register",
+    login: "/login",
     admin: "/admin",
 }
 
