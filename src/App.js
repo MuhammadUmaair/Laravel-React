@@ -8,9 +8,9 @@ import MasterLayout from "./layouts/admin/MasterLayout";
 import Dashboard from "./components/admin/Dashboard";
 import Profile from "./components/admin/Profile";
 import routes from "./routes/routes";
-import Home from "./components/admin/Home";
 import Login from "./components/frontend/auth/Login";
 import Register from "./components/frontend/auth/Register";
+import Home from "./components/frontend/Home";
 
 function App() {
 
