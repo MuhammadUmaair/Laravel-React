@@ -18,16 +18,14 @@ php artisan serve
     📂 Models
     📂 Providers
         🗏 AppServiceProvider.php
-            **To set the defaultStringLength to 191 in the Laravel application.
-            This is necessary to ensure compatibility with the default character set used in the database.**
+            //To set the defaultStringLength to 191 in the Laravel application.This is necessary to ensure compatibility with the default character set used in the database.**
 
-            ```
+            
             use Illuminate\Support\Facades\Schema;
                 public function boot()
                 {
                     Schema::defaultStringLength(191);
                 }
-            ```
 📂 routes
     🗏 web.php
 
