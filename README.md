@@ -16,7 +16,7 @@ php artisan serve
 
 ### For Install UI Auth
 
-**when you want to quickly set up user authentication in a Laravel project without having to manually create all the required files and routes.**
+**When You Want To Quickly Set Up User Authentication In A Laravel Project Without Having To Manually Create All The Required Files And Routes.**
 
 ```php artisan ui:auth```
 
@@ -27,6 +27,25 @@ php artisan serve
 **Laravel Sanctum is a lightweight package for authentication in SPA (Single Page Application) or mobile application development.**
 
 ```composer require laravel/sanctum```
+
+**To Publish The Configuration File And Migration Files That Come With The Sanctum Package.**
+
+```php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"```
+
+**To Execute Any Pending Database Migrations.**
+
+```php artisan migrate```
+
+**Add Sanctum's Middleware To Your API Middleware Group Within Your Application's `app/Http/Kernel.php file`:**
+
+```
+    'api' => [
+        \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
+        'throttle:api',
+        \Illuminate\Routing\Middleware\SubstituteBindings::class,
+    ],
+
+```
 
 ### Hierarchy
 ```
