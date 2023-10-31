@@ -22,6 +22,8 @@ php artisan serve
 
 ### For Install Sanctum
 
+🗏 Install Sanctum: [![Sanctum](https://img.shields.io/badge/Install-Sanctum-purple)](https://laravel.com/docs/8.x/sanctum)
+
 **Laravel Sanctum is a lightweight package for authentication in SPA (Single Page Application) or mobile application development.**
 
 ```composer require laravel/sanctum```
