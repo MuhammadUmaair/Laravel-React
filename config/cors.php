@@ -29,6 +29,7 @@ return [
 
     'max_age' => 0,
 
-    'supports_credentials' => false,
+    //To solve CORS Policy,First you need to change 'False' to 'True'
+    'supports_credentials' => true,
 
 ];
