@@ -20,6 +20,12 @@ php artisan serve
 
 ```php artisan ui:auth```
 
+### For Install Sanctum
+
+**Laravel Sanctum is a lightweight package for authentication in SPA (Single Page Application) or mobile application development.**
+
+```composer require laravel/sanctum```
+
 ### Hierarchy
 ```
 
