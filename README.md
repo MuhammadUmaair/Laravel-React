@@ -59,12 +59,29 @@ php artisan serve
 
 ```
 
+### CORS & Cookies
+
+**CORS Configuration: Ensure that your Laravel application's CORS (Cross-Origin Resource Sharing) configuration returns the Access-Control-Allow-Credentials header with a value of true. You can do this by setting the supports_credentials option to true in the config/cors.php configuration file of your Laravel app.**
+
+```
+   axios.defaults.withCredentials = true;
+
+```
+
+### Controllers
+
+```php artisan make:controller API/AuthController```
+
+
+### Models
 ### Hierarchy
 ```
 
 📂 app
     📂 Http
         📂 Controllers
+            📂 API
+                🗏 AuthController.php
         📂 Middleware
     📂 Models
     📂 Providers
