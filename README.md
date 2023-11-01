@@ -1,5 +1,13 @@
 # Getting Started with Create React App
 
+# Version
+
+```
+node -v (v21.0.0)
+npm -v (v10.2.0)
+
+```
+
 ```
 npx create-react-app reactecom
 cd reactecom
@@ -21,6 +29,34 @@ npm start
 🗏 Install Bootstrap: [![Bootstrap](https://img.shields.io/badge/Install-Bootstrap-blueviolet)](https://getbootstrap.com/)
 
 ```npm install bootstrap@5.3.2```
+
+### For Sweetalert
+
+🗏 Install Sweetalert: [![Sweetalert](https://img.shields.io/badge/Install-Sweetalert-orange)](https://www.npmjs.com/package/sweetalert)
+
+```npm install sweetalert --save```
+
+**Usage:**
+
+```
+    import swal from 'sweetalert';
+    swal("Hello world!");
+
+```
+
+
+### Authenticating
+
+**CSRF Protection:To authenticate your SPA, your SPA's "login" page should first make a request to the /sanctum/csrf-cookie endpoint to initialize CSRF protection for the application:**
+
+```
+    axios.get('/sanctum/csrf-cookie').then(response => {
+      axios.post(`${constant.url}/api/register`, data).then((res) => {
+
+      });
+    });
+
+```
 
 
 ### For Admin Panel 
