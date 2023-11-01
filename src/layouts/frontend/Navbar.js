@@ -1,8 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import routes from "../../routes/routes";
+import axios from "axios";
+import swal from "sweetalert";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+  const navigate = useNavigate();
+  const logoutSubmit = (e) => {
+    e.preventDefault();
+    axios.post(`/api/logout`).then((res) => {
+      if (res.data.status === 200) {
+        localStorage.removeItem("auth_token");
+        localStorage.removeItem("auth_name");
+        swal("Success", res.data.message, "success");
+        navigate("/");
+      } else {
+      }
+    });
+  };
+
   var AuthButtons = "";
   if (!localStorage.getItem("auth_token")) {
     AuthButtons = (
@@ -24,6 +41,7 @@ function Navbar() {
       <li className="nav-item">
         <button
           type="button"
+          onClick={logoutSubmit}
           className="nav-link btn btn-danger btn-sm text-white"
         >
           Logout
