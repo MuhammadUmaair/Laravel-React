@@ -95,6 +95,16 @@ npm start
 
 ```
 
+### Errors:
+![image](https://github.com/MuhammadUmaair/Laravel-React/assets/104490047/7b43e902-b25c-4d8a-9226-45caec1c100e)
+
+**if your are facing this error, you should add in your `.env` file.**
+```
+SESSION_DOMAIN=localhost
+SANCTUM_STATEFUL_DOMAINS=localhost
+
+```
+
 
 ### Connect
 
