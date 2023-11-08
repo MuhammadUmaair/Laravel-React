@@ -60,7 +60,11 @@ class AuthController extends Controller
                     'message' => 'Invalid Credentials',
                 ]);
             } else {
-                $token = $user->createToken($user->email . '_Token')->plainTextToken;
+                if ($user->role_as == 1) {
+                    $token = $user->createToken($user->email . '_AdminToken', ['server:admin'])->plainTextToken;
+                } else {
+                    $token = $user->createToken($user->email . '_Token')->plainTextToken;
+                }
                 return response()->json([
                     'status' => 200,
                     'username' => $user->name,
@@ -74,8 +78,8 @@ class AuthController extends Controller
     {
         auth()->user()->tokens()->delete();
         return response()->json([
-            'status'=>200,
-            'message'=>'Logged Out Successfully',
+            'status' => 200,
+            'message' => 'Logged Out Successfully',
         ]);
     }
 }
