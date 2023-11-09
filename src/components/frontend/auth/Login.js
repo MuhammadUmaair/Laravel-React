@@ -3,9 +3,9 @@ import Navbar from "../../../layouts/frontend/Navbar";
 import axiosInstance from "../../../config/axiosConfig";
 import swal from "sweetalert";
 import { useNavigate } from "react-router-dom";
+import routes from "../../../routes/routes";
 
 function Login() {
-    
   const navigate = useNavigate();
   const [loginInput, setLogin] = useState({
     email: "",
@@ -30,9 +30,14 @@ function Login() {
           localStorage.setItem("auth_token", res.data.token);
           localStorage.setItem("auth_name", res.data.username);
           swal("Success", res.data.message, "success");
-          navigate("/");
+          if (res.data.role === "admin") {
+            localStorage.setItem("admin_token", res.data.token);
+            navigate(routes.dashboard);
+          } else {
+            navigate(routes.home);
+          }
         } else if (res.data.status === 401) {
-            swal("Warning", res.data.message, "warning");
+          swal("Warning", res.data.message, "warning");
         } else {
           setLogin({ ...loginInput, error_list: res.data.validation_errors });
         }
