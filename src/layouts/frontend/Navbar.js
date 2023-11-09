@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import routes from "../../routes/routes";
-import axios from "axios";
+import axiosInstance from "../../config/axiosConfig";
 import swal from "sweetalert";
 import { useNavigate } from "react-router-dom";
 
@@ -9,7 +9,7 @@ function Navbar() {
   const navigate = useNavigate();
   const logoutSubmit = (e) => {
     e.preventDefault();
-    axios.post(`/api/logout`).then((res) => {
+    axiosInstance.post(`/api/logout`).then((res) => {
       if (res.data.status === 200) {
         localStorage.removeItem("auth_token");
         localStorage.removeItem("auth_name");

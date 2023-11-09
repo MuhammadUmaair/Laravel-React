@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../../../layouts/frontend/Navbar";
-import axios from "axios";
+import axiosInstance from "../../../config/axiosConfig";
 import swal from "sweetalert";
 import { useNavigate } from "react-router-dom";
 
@@ -24,8 +24,8 @@ function Login() {
       password: loginInput.password,
     };
 
-    axios.get("/sanctum/csrf-cookie").then((response) => {
-      axios.post(`api/login`, data).then((res) => {
+    axiosInstance.get("/sanctum/csrf-cookie").then((response) => {
+      axiosInstance.post(`api/login`, data).then((res) => {
         if (res.data.status === 200) {
           localStorage.setItem("auth_token", res.data.token);
           localStorage.setItem("auth_name", res.data.username);
