@@ -12,10 +12,11 @@ import Register from "./components/frontend/auth/Register";
 import E403 from "./components/errors/Page403";
 import E404 from "./components/errors/Page404";
 import AdminPrivateRoute from "./components/admin/AdminPrivateRoute";
+import Dashboard from "./components/admin/Dashboard";
 
 function App() {
   const authToken = localStorage.getItem("auth_token");
-  const AdminToken = localStorage.getItem("admin_token");
+  const adminToken = localStorage.getItem("admin_token");
   const renderRoutes = () => (
     <Routes>
       <Route path={routes.home} element={<Home />} />
@@ -29,23 +30,25 @@ function App() {
         path={routes.register}
         element={authToken ? <Navigate to="/" /> : <Register />}
       />
+      <Route
+        path={routes.dashboard}
+        element={adminToken ? <AdminPrivateRoute /> : <Home />}
+      />
     </Routes>
   );
-  const adminRoutes = () => (
-    // <Routes>
-    //   <Route path={routes.admin} element={<MasterLayout />}>
-    //     <Route path={routes.dashboard} element={<Dashboard />} />
-    //     <Route path={routes.profile} element={<Profile />} />
-    //   </Route>
-    // </Routes>
-    <AdminPrivateRoute authToken={authToken}/>
-  );
+  const adminRoutes = () => <AdminPrivateRoute />;
 
   return (
+    <>
     <div className="App">
-      <Router>{renderRoutes()}</Router>
-      <Router>{AdminToken && adminRoutes()}</Router>
+      <Router>
+      
+       
+        {renderRoutes()}
+        {adminRoutes()}
+      </Router>
     </div>
+    </>
   );
 }
 
