@@ -1,19 +1,19 @@
 const mainRoutes = {
-    home: "",
+    home: "/",
     register: "/register",
     login: "/login",
     admin: "/admin",
 }
 
 const dashboardRoutes = {
-    home: `${mainRoutes.home}/`,
+    home: `${mainRoutes.home}`,
     dashboard: `${mainRoutes.admin}/dashboard`,
     profile: `${mainRoutes.admin}/profile`,
 }
 
 const errorRoutes = {
-    e403: `${mainRoutes.home}/403`,
-    e404: `${mainRoutes.home}/404`,
+    e403: `${mainRoutes.home}403`,
+    e404: `${mainRoutes.home}404`,
     
 }
 
